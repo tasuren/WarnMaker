@@ -21,7 +21,7 @@
         <Label Content="タイトル" HorizontalAlignment="Left" Margin="12,41,0,0" VerticalAlignment="Top" Width="105" Height="28" FontSize="14"/>
         <TextBox x:Name="Title" HorizontalAlignment="Left" Height="23" Margin="12,69,0,0" TextWrapping="Wrap" Text="ウィンドウのタイトル" VerticalAlignment="Top" Width="105"/>
         <Label Content="説明文" HorizontalAlignment="Left" Margin="130,43,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="1.655,0.525" FontSize="14"/>
-        <TextBox x:Name="Description" AcceptsReturn="True" HorizontalAlignment="Left" Height="75" Margin="130,69,0,0" TextWrapping="Wrap" Text="ウィンドウの説明" VerticalAlignment="Top" Width="105"/>
+        <TextBox x:Name="Description" AcceptsReturn="True" HorizontalAlignment="Left" Height="75" Margin="130,69,0,0" TextWrapping="Wrap" Text="ウィンドウの説明" VerticalAlignment="Top" Width="105" KeyDown="Description_KeyDown"/>
         <Button x:Name="Make" Click="Make_Message_Box" Content="作成する" HorizontalAlignment="Left" Margin="132,155,0,0" VerticalAlignment="Top" Width="103" Height="46" FontSize="24"/>
         <Label Content="ボタンの種類" HorizontalAlignment="Left" Margin="12,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.776,-0.896" Width="105" FontSize="14" Height="30"/>
         <ComboBox x:Name="ButtonModeSelector" HorizontalAlignment="Left" Margin="12,179,0,0" VerticalAlignment="Top" Width="105">

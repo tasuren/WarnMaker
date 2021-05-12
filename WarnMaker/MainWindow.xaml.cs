@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace WarnMaker
 {
@@ -57,6 +59,14 @@ namespace WarnMaker
         {
             Console.WriteLine("Making MessageBox!");
             MessageBox.Show(Description.Text, Title.Text, ExtractButtonMode(), ExtractIconMode());
+        }
+
+        private void Description_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(Keyboard.IsKeyDown(Key.LeftCtrl) && e.Key == Key.Enter)
+            {
+                Make_Message_Box(this, null);
+            }
         }
     }
 }
